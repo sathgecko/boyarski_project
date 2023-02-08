@@ -1,0 +1,299 @@
+{
+    "q": "\u0412\u044c\u0442\u043d\u0430\u043c",
+    "rid": "4df512f41a2b45ac950ae5ec3e45a539",
+    "rc": "OK",
+    "sr": [
+        {
+            "@type": "gaiaRegionResult",
+            "index": "0",
+            "gaiaId": "194",
+            "type": "MULTIREGION",
+            "subtype": "COUNTRY",
+            "regionNames": {
+                "fullName": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "shortName": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "displayName": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "primaryDisplayName": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "secondaryDisplayName": "",
+                "lastSearchName": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "194"
+            },
+            "coordinates": {
+                "lat": "14.058324",
+                "long": "108.277199"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                    "isoCode2": "VN",
+                    "isoCode3": "VNM"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "1",
+            "gaiaId": "6054439",
+            "type": "CITY",
+            "regionNames": {
+                "fullName": "\u041d\u0445\u0430\u0442\u0440\u0430\u043d\u0433, \u041a\u0445\u0430\u043d\u044c\u0445\u043e\u0430 (\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f), \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "shortName": "\u041d\u0445\u0430\u0442\u0440\u0430\u043d\u0433",
+                "displayName": "\u041d\u0445\u0430\u0442\u0440\u0430\u043d\u0433, \u041a\u0445\u0430\u043d\u044c\u0445\u043e\u0430 (\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f), \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "primaryDisplayName": "\u041d\u0445\u0430\u0442\u0440\u0430\u043d\u0433",
+                "secondaryDisplayName": "\u041a\u0445\u0430\u043d\u044c\u0445\u043e\u0430 (\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f), \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "lastSearchName": "\u041d\u0445\u0430\u0442\u0440\u0430\u043d\u0433"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "6054439"
+            },
+            "coordinates": {
+                "lat": "12.24959",
+                "long": "109.190704"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                    "isoCode2": "VN",
+                    "isoCode3": "VNM"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "2",
+            "gaiaId": "553248633981700918",
+            "type": "NEIGHBORHOOD",
+            "regionNames": {
+                "fullName": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u043b\u044f\u0436 \u041c\u0443\u0439\u043d\u0435, Phan Thiet, \u0411\u0438\u043d\u044c\u0442\u0445\u0443\u0430\u043d, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "shortName": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u043b\u044f\u0436 \u041c\u0443\u0439\u043d\u0435",
+                "displayName": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u043b\u044f\u0436 \u041c\u0443\u0439\u043d\u0435, Phan Thiet, \u0411\u0438\u043d\u044c\u0442\u0445\u0443\u0430\u043d, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "primaryDisplayName": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u043b\u044f\u0436 \u041c\u0443\u0439\u043d\u0435",
+                "secondaryDisplayName": "Phan Thiet, \u0411\u0438\u043d\u044c\u0442\u0445\u0443\u0430\u043d, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "lastSearchName": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u043b\u044f\u0436 \u041c\u0443\u0439\u043d\u0435"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "553248633981700918"
+            },
+            "coordinates": {
+                "lat": "10.953206926241958",
+                "long": "108.21031370954215"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                    "isoCode2": "VN",
+                    "isoCode3": "VNM"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "3",
+            "gaiaId": "6054401",
+            "type": "CITY",
+            "regionNames": {
+                "fullName": "Phan Thiet, \u0411\u0438\u043d\u044c\u0442\u0445\u0443\u0430\u043d, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "shortName": "Phan Thiet",
+                "displayName": "Phan Thiet, \u0411\u0438\u043d\u044c\u0442\u0445\u0443\u0430\u043d, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "primaryDisplayName": "Phan Thiet",
+                "secondaryDisplayName": "\u0411\u0438\u043d\u044c\u0442\u0445\u0443\u0430\u043d, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "lastSearchName": "Phan Thiet"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "6054401"
+            },
+            "coordinates": {
+                "lat": "10.92571",
+                "long": "108.096046"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                    "isoCode2": "VN",
+                    "isoCode3": "VNM"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "4",
+            "gaiaId": "6141655",
+            "type": "CITY",
+            "regionNames": {
+                "fullName": "\u041e\u0441\u0442\u0440\u043e\u0432\u0424\u0443\u043a\u0443\u043e\u043a, \u041a\u044c\u0435\u043d\u0437\u044f\u043d\u0433 (\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f), \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "shortName": "\u041e\u0441\u0442\u0440\u043e\u0432\u0424\u0443\u043a\u0443\u043e\u043a",
+                "displayName": "\u041e\u0441\u0442\u0440\u043e\u0432\u0424\u0443\u043a\u0443\u043e\u043a, \u041a\u044c\u0435\u043d\u0437\u044f\u043d\u0433 (\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f), \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "primaryDisplayName": "\u041e\u0441\u0442\u0440\u043e\u0432\u0424\u0443\u043a\u0443\u043e\u043a",
+                "secondaryDisplayName": "\u041a\u044c\u0435\u043d\u0437\u044f\u043d\u0433 (\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f), \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "lastSearchName": "\u041e\u0441\u0442\u0440\u043e\u0432\u0424\u0443\u043a\u0443\u043e\u043a"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "6141655"
+            },
+            "coordinates": {
+                "lat": "10.158625",
+                "long": "103.984016"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                    "isoCode2": "VN",
+                    "isoCode3": "VNM"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "5",
+            "gaiaId": "3140",
+            "type": "CITY",
+            "regionNames": {
+                "fullName": "\u0425\u043e\u0448\u0438\u043c\u0438\u043d, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "shortName": "\u0425\u043e\u0448\u0438\u043c\u0438\u043d",
+                "displayName": "\u0425\u043e\u0448\u0438\u043c\u0438\u043d, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "primaryDisplayName": "\u0425\u043e\u0448\u0438\u043c\u0438\u043d",
+                "secondaryDisplayName": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "lastSearchName": "\u0425\u043e\u0448\u0438\u043c\u0438\u043d"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "3140"
+            },
+            "coordinates": {
+                "lat": "10.776308",
+                "long": "106.702867"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                    "isoCode2": "VN",
+                    "isoCode3": "VNM"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "6",
+            "gaiaId": "6297250",
+            "type": "CITY",
+            "regionNames": {
+                "fullName": "\u0414\u0430\u043d\u0430\u043d\u0433, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "shortName": "\u0414\u0430\u043d\u0430\u043d\u0433",
+                "displayName": "\u0414\u0430\u043d\u0430\u043d\u0433, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "primaryDisplayName": "\u0414\u0430\u043d\u0430\u043d\u0433",
+                "secondaryDisplayName": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "lastSearchName": "\u0414\u0430\u043d\u0430\u043d\u0433"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "6297250"
+            },
+            "coordinates": {
+                "lat": "16.06076",
+                "long": "108.217039"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                    "isoCode2": "VN",
+                    "isoCode3": "VNM"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "7",
+            "gaiaId": "6054458",
+            "type": "CITY",
+            "regionNames": {
+                "fullName": "\u0425\u0430\u043d\u043e\u0439, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "shortName": "\u0425\u0430\u043d\u043e\u0439",
+                "displayName": "\u0425\u0430\u043d\u043e\u0439, \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "primaryDisplayName": "\u0425\u0430\u043d\u043e\u0439",
+                "secondaryDisplayName": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "lastSearchName": "\u0425\u0430\u043d\u043e\u0439"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "6054458"
+            },
+            "coordinates": {
+                "lat": "21.035911",
+                "long": "105.839431"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                    "isoCode2": "VN",
+                    "isoCode3": "VNM"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "8",
+            "gaiaId": "6034264",
+            "type": "CITY",
+            "regionNames": {
+                "fullName": "\u0425\u043e\u0439\u0430\u043d, \u041a\u0443\u0430\u043d\u0433\u043d\u0430\u043c (\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f), \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "shortName": "\u0425\u043e\u0439\u0430\u043d",
+                "displayName": "\u0425\u043e\u0439\u0430\u043d, \u041a\u0443\u0430\u043d\u0433\u043d\u0430\u043c (\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f), \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "primaryDisplayName": "\u0425\u043e\u0439\u0430\u043d",
+                "secondaryDisplayName": "\u041a\u0443\u0430\u043d\u0433\u043d\u0430\u043c (\u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u044f), \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "lastSearchName": "\u0425\u043e\u0439\u0430\u043d"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "6034264"
+            },
+            "coordinates": {
+                "lat": "15.87749",
+                "long": "108.331009"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                    "isoCode2": "VN",
+                    "isoCode3": "VNM"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "9",
+            "gaiaId": "6031238",
+            "type": "AIRPORT",
+            "regionNames": {
+                "fullName": "\u041e\u0441\u0442\u0440\u043e\u0432 \u0424\u0443\u043a\u0443\u043e\u043a, \u0412\u044c\u0435\u0442\u043d\u0430\u043c (PQC-\u0424\u0443\u043a\u0443\u043e\u043a, \u043c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u044b\u0439)",
+                "shortName": "\u041e\u0441\u0442\u0440\u043e\u0432 \u0424\u0443\u043a\u0443\u043e\u043a (PQC-\u0424\u0443\u043a\u0443\u043e\u043a, \u043c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u044b\u0439)",
+                "displayName": "\u041e\u0441\u0442\u0440\u043e\u0432 \u0424\u0443\u043a\u0443\u043e\u043a (PQC - \u0424\u0443\u043a\u0443\u043e\u043a, \u043c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u044b\u0439), \u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "primaryDisplayName": "\u041e\u0441\u0442\u0440\u043e\u0432 \u0424\u0443\u043a\u0443\u043e\u043a (PQC - \u0424\u0443\u043a\u0443\u043e\u043a, \u043c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u044b\u0439)",
+                "secondaryDisplayName": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                "lastSearchName": "\u041e\u0441\u0442\u0440\u043e\u0432 \u0424\u0443\u043a\u0443\u043e\u043a (PQC - \u0424\u0443\u043a\u0443\u043e\u043a, \u043c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u044b\u0439)"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "6031238"
+            },
+            "coordinates": {
+                "lat": "10.158074",
+                "long": "103.997638"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0412\u044c\u0435\u0442\u043d\u0430\u043c",
+                    "isoCode2": "VN",
+                    "isoCode3": "VNM"
+                }
+            },
+            "isMinorAirport": "false"
+        }
+    ]
+}

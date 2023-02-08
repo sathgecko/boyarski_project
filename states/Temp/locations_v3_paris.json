@@ -1,0 +1,298 @@
+{
+    "q": "\u041f\u0430\u0440\u0438\u0436",
+    "rid": "d89287485364406c9f6acf852952e60c",
+    "rc": "OK",
+    "sr": [
+        {
+            "@type": "gaiaRegionResult",
+            "index": "0",
+            "gaiaId": "2734",
+            "type": "CITY",
+            "regionNames": {
+                "fullName": "\u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "shortName": "\u041f\u0430\u0440\u0438\u0436",
+                "displayName": "\u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "primaryDisplayName": "\u041f\u0430\u0440\u0438\u0436",
+                "secondaryDisplayName": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "lastSearchName": "\u041f\u0430\u0440\u0438\u0436"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "2734"
+            },
+            "coordinates": {
+                "lat": "48.853564",
+                "long": "2.348095"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                    "isoCode2": "FR",
+                    "isoCode3": "FRA"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "1",
+            "gaiaId": "4670531",
+            "type": "AIRPORT",
+            "regionNames": {
+                "fullName": "\u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f (CDG-\u0420\u0443\u0430\u0441\u0441\u0438-\u0428\u0430\u0440\u043b\u044c-\u0434\u0435-\u0413\u043e\u043b\u043b\u044c)",
+                "shortName": "\u041f\u0430\u0440\u0438\u0436 (CDG-\u0420\u0443\u0430\u0441\u0441\u0438-\u0428\u0430\u0440\u043b\u044c-\u0434\u0435-\u0413\u043e\u043b\u043b\u044c)",
+                "displayName": "\u041f\u0430\u0440\u0438\u0436 (CDG - \u0420\u0443\u0430\u0441\u0441\u0438-\u0428\u0430\u0440\u043b\u044c-\u0434\u0435-\u0413\u043e\u043b\u043b\u044c), \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "primaryDisplayName": "\u041f\u0430\u0440\u0438\u0436 (CDG - \u0420\u0443\u0430\u0441\u0441\u0438-\u0428\u0430\u0440\u043b\u044c-\u0434\u0435-\u0413\u043e\u043b\u043b\u044c)",
+                "secondaryDisplayName": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "lastSearchName": "\u041f\u0430\u0440\u0438\u0436 (CDG - \u0420\u0443\u0430\u0441\u0441\u0438-\u0428\u0430\u0440\u043b\u044c-\u0434\u0435-\u0413\u043e\u043b\u043b\u044c)"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "4670531"
+            },
+            "coordinates": {
+                "lat": "49.004061",
+                "long": "2.571006"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                    "isoCode2": "FR",
+                    "isoCode3": "FRA"
+                }
+            },
+            "isMinorAirport": "false"
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "2",
+            "gaiaId": "6200422",
+            "type": "NEIGHBORHOOD",
+            "regionNames": {
+                "fullName": "\u0426\u0435\u043d\u0442\u0440 \u041f\u0430\u0440\u0438\u0436\u0430, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "shortName": "\u0426\u0435\u043d\u0442\u0440 \u041f\u0430\u0440\u0438\u0436\u0430",
+                "displayName": "\u0426\u0435\u043d\u0442\u0440 \u041f\u0430\u0440\u0438\u0436\u0430, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "primaryDisplayName": "\u0426\u0435\u043d\u0442\u0440 \u041f\u0430\u0440\u0438\u0436\u0430",
+                "secondaryDisplayName": "\u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "lastSearchName": "\u0426\u0435\u043d\u0442\u0440 \u041f\u0430\u0440\u0438\u0436\u0430"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "6200422"
+            },
+            "coordinates": {
+                "lat": "48.862383",
+                "long": "2.339074"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                    "isoCode2": "FR",
+                    "isoCode3": "FRA"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "3",
+            "gaiaId": "6187879",
+            "type": "NEIGHBORHOOD",
+            "regionNames": {
+                "fullName": "9-\u0439 \u043e\u043a\u0440\u0443\u0433, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "shortName": "9-\u0439 \u043e\u043a\u0440\u0443\u0433",
+                "displayName": "9-\u0439 \u043e\u043a\u0440\u0443\u0433, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "primaryDisplayName": "9-\u0439 \u043e\u043a\u0440\u0443\u0433",
+                "secondaryDisplayName": "\u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "lastSearchName": "9-\u0439 \u043e\u043a\u0440\u0443\u0433"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "6187879"
+            },
+            "coordinates": {
+                "lat": "48.876019",
+                "long": "2.339962"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                    "isoCode2": "FR",
+                    "isoCode3": "FRA"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "4",
+            "gaiaId": "502232",
+            "type": "POI",
+            "regionNames": {
+                "fullName": "\u041e\u043f\u0435\u0440\u0430 \u0413\u0430\u0440\u043d\u044c\u0435, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "shortName": "\u041e\u043f\u0435\u0440\u0430 \u0413\u0430\u0440\u043d\u044c\u0435",
+                "displayName": "\u041e\u043f\u0435\u0440\u0430 \u0413\u0430\u0440\u043d\u044c\u0435, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "primaryDisplayName": "\u041e\u043f\u0435\u0440\u0430 \u0413\u0430\u0440\u043d\u044c\u0435",
+                "secondaryDisplayName": "\u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "lastSearchName": "\u041e\u043f\u0435\u0440\u0430 \u0413\u0430\u0440\u043d\u044c\u0435"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "502232"
+            },
+            "coordinates": {
+                "lat": "48.87201739349091",
+                "long": "2.3317166916660765"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                    "isoCode2": "FR",
+                    "isoCode3": "FRA"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "5",
+            "gaiaId": "6187856",
+            "type": "NEIGHBORHOOD",
+            "regionNames": {
+                "fullName": "1-\u0439 \u043e\u043a\u0440\u0443\u0433, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "shortName": "1-\u0439 \u043e\u043a\u0440\u0443\u0433",
+                "displayName": "1-\u0439 \u043e\u043a\u0440\u0443\u0433, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "primaryDisplayName": "1-\u0439 \u043e\u043a\u0440\u0443\u0433",
+                "secondaryDisplayName": "\u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "lastSearchName": "1-\u0439 \u043e\u043a\u0440\u0443\u0433"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "6187856"
+            },
+            "coordinates": {
+                "lat": "48.864614",
+                "long": "2.334396"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                    "isoCode2": "FR",
+                    "isoCode3": "FRA"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "6",
+            "gaiaId": "502251",
+            "type": "POI",
+            "regionNames": {
+                "fullName": "\u042d\u0439\u0444\u0435\u043b\u0435\u0432\u0430 \u0431\u0430\u0448\u043d\u044f, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "shortName": "\u042d\u0439\u0444\u0435\u043b\u0435\u0432\u0430 \u0431\u0430\u0448\u043d\u044f",
+                "displayName": "\u042d\u0439\u0444\u0435\u043b\u0435\u0432\u0430 \u0431\u0430\u0448\u043d\u044f, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "primaryDisplayName": "\u042d\u0439\u0444\u0435\u043b\u0435\u0432\u0430 \u0431\u0430\u0448\u043d\u044f",
+                "secondaryDisplayName": "\u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "lastSearchName": "\u042d\u0439\u0444\u0435\u043b\u0435\u0432\u0430 \u0431\u0430\u0448\u043d\u044f"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "502251"
+            },
+            "coordinates": {
+                "lat": "48.858262",
+                "long": "2.294496"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                    "isoCode2": "FR",
+                    "isoCode3": "FRA"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "7",
+            "gaiaId": "178676",
+            "type": "NEIGHBORHOOD",
+            "regionNames": {
+                "fullName": "\u041c\u043e\u043d\u043c\u0430\u0440\u0442\u0440, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "shortName": "\u041c\u043e\u043d\u043c\u0430\u0440\u0442\u0440",
+                "displayName": "\u041c\u043e\u043d\u043c\u0430\u0440\u0442\u0440, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "primaryDisplayName": "\u041c\u043e\u043d\u043c\u0430\u0440\u0442\u0440",
+                "secondaryDisplayName": "\u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "lastSearchName": "\u041c\u043e\u043d\u043c\u0430\u0440\u0442\u0440"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "178676"
+            },
+            "coordinates": {
+                "lat": "48.886705",
+                "long": "2.341572"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                    "isoCode2": "FR",
+                    "isoCode3": "FRA"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "8",
+            "gaiaId": "178675",
+            "type": "NEIGHBORHOOD",
+            "regionNames": {
+                "fullName": "\u041b\u0430\u0442\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "shortName": "\u041b\u0430\u0442\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b",
+                "displayName": "\u041b\u0430\u0442\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "primaryDisplayName": "\u041b\u0430\u0442\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b",
+                "secondaryDisplayName": "\u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "lastSearchName": "\u041b\u0430\u0442\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "178675"
+            },
+            "coordinates": {
+                "lat": "48.848741",
+                "long": "2.34205"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                    "isoCode2": "FR",
+                    "isoCode3": "FRA"
+                }
+            }
+        },
+        {
+            "@type": "gaiaRegionResult",
+            "index": "9",
+            "gaiaId": "6187876",
+            "type": "NEIGHBORHOOD",
+            "regionNames": {
+                "fullName": "8-\u0439 \u043e\u043a\u0440\u0443\u0433, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "shortName": "8-\u0439 \u043e\u043a\u0440\u0443\u0433",
+                "displayName": "8-\u0439 \u043e\u043a\u0440\u0443\u0433, \u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "primaryDisplayName": "8-\u0439 \u043e\u043a\u0440\u0443\u0433",
+                "secondaryDisplayName": "\u041f\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                "lastSearchName": "8-\u0439 \u043e\u043a\u0440\u0443\u0433"
+            },
+            "essId": {
+                "sourceName": "GAI",
+                "sourceId": "6187876"
+            },
+            "coordinates": {
+                "lat": "48.87265903392636",
+                "long": "2.3124387155490913"
+            },
+            "hierarchyInfo": {
+                "country": {
+                    "name": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+                    "isoCode2": "FR",
+                    "isoCode3": "FRA"
+                }
+            }
+        }
+    ]
+}
