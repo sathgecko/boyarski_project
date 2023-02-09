@@ -43,7 +43,7 @@ def results_handler(callback: CallbackQuery) -> None:
                                       'Хочешь повторить поиск?',
                                       reply_markup=default_keyboard())
 
-        elif hotels_list_length == hotel_num + 1 and hotel_num != 24:
+        elif hotels_list_length == hotel_num + 1 and hotel_num != 24: # количество отелей на странице
             bot.send_message(chat_id, 'Отелей больше нет. Хочешь повторить поиск?',
                                       reply_markup=default_keyboard())
 
@@ -51,7 +51,7 @@ def results_handler(callback: CallbackQuery) -> None:
             add_hotels_to_history_db(chat_id, hotels_list[hotel_num]['id'], hotels_list[hotel_num]['name'])
             show_hotel(hotels_list[hotel_num], chat_id)
 
-            if hotel_num == 24:
+            if hotel_num == 24: # количество отелей на странице
                 page_num += 1
                 hotel_num = 0
                 with bot.retrieve_data(callback.from_user.id, chat_id) as data:
