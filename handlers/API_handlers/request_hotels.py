@@ -3,31 +3,27 @@ import json
 from typing import List, Optional
 from logger_config import logger
 import requests
-# from . import connect_rapid_api
-# from loader import rapid_api
+from . import connect_rapid_api_post
+from loader import rapid_api
 # import re
 # import datetime
 def get_address(hotel_id):
     """Получение адреса с API, используется на 103 и 108 строчке при необходимости"""
     url2 = "https://hotels4.p.rapidapi.com/properties/v2/get-summary"
-    payload2 = {
+    req_params2 = {
         "currency": "RUB",
         "eapid": 1,
         "locale": "ru_RUS",
         "siteId": 300000001,
         "propertyId": hotel_id
     }
-    headers2 = {
-        "content-type": "application/json",
-        "X-RapidAPI-Key": "06dd932f31msh0a52e2bdec9c858p132b0cjsnd04a260d0e20",
-        "X-RapidAPI-Host": "hotels4.p.rapidapi.com"
-    }
-    response2 = requests.request("POST", url2, json=payload2, headers=headers2)
+
+    response2 = connect_rapid_api_post(url2, rapid_api, req_params2)
     # print(response2)
     resp_json2 = json.loads(response2.text)
     # print(resp_json2)
     address = resp_json2['data']['propertyInfo']['summary']['location']['address']['addressLine']
-    print(address)
+    # print(address)
     return address
 
 @logger.catch
@@ -48,12 +44,20 @@ def request_hotels(search_data: dict, page: int = 1) -> Optional[List]:
     command = search_data.get('command', None)
     if command == 'lowprice':
         sort_order = 'PRICE_LOW_TO_HIGH '
-    elif command == 'highprice':
-        sort_order = 'PRICE_HIGHEST_FIRST'
+    # elif command == 'highprice':
+    #     sort_order = 'PRICE_HIGHEST_FIRST'
     elif command == 'bestdeal':
         sort_order = 'DISTANCE'
     else:
         sort_order = 'RECOMMENDED'
+    # One  # of  # the # following:
+    # PRICE_RELEVANT(Price + our  # picks) |
+    # REVIEW(Guest  # rating) |
+    # DISTANCE(Distance # from downtown) |
+    # PRICE_LOW_TO_HIGH(Price) |
+    # PROPERTY_CLASS(Star  # rating) |
+    # RECOMMENDED(Recommended)
+    # Ex: "sort": "RECOMMENDED"
 
     checkin_date = search_data['checkin_date']
     checkout_date = search_data['checkout_date']
@@ -82,13 +86,8 @@ def request_hotels(search_data: dict, page: int = 1) -> Optional[List]:
                       "min": search_data.get('min_price', None)
                   }}
                   }
-    url = 'https://hotels4.p.rapidapi.com/properties/v2/list'
-    headers = {
-        "content-type": "application/json",
-        "X-RapidAPI-Key": "06dd932f31msh0a52e2bdec9c858p132b0cjsnd04a260d0e20",
-        "X-RapidAPI-Host": "hotels4.p.rapidapi.com"
-    }
-    response = requests.request("POST", url, json=req_params, headers=headers)
+
+    response = connect_rapid_api_post('https://hotels4.p.rapidapi.com/properties/v2/list', rapid_api, req_params)
     # print(response)
 
     if response:
@@ -114,17 +113,3 @@ def request_hotels(search_data: dict, page: int = 1) -> Optional[List]:
             hotels_list.append(new_hotel)
         print(hotels_list)
         return hotels_list
-
-
-
-
-# File "C:\Users\Вика\Desktop\too-easy-travel-bot_AlexSolokhin_MY_work\utils\show_hotels.py", line 18, in show_hotel
-#     country = hotel['address'].get('countryName')
-# hotel_name = hotel['name']
-#     country = hotel['address'].get('countryName')
-#     city = hotel['address'].get('locality')
-#     street_adr = hotel['address'].get('streetAddress', 'Полный адрес доступен после бронирования.')
-#     distance = hotel['from_center']
-#     price_per_night = hotel['price']
-#     total_price = hotel['total_price']
-#     hotel_id = hotel["id"]

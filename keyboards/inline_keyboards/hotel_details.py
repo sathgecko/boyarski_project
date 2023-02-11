@@ -18,7 +18,7 @@ def hotel_details_keyboard(hotel_id: int,
     :rtype: InlineKeyboardMarkup
     """
 
-    hotel_link = f'https://www.hotels.com/'
+    hotel_link = f'https://www.hotels.com/h{hotel_id}.Hotel-Information'
 
     keyboard = types.InlineKeyboardMarkup()
 

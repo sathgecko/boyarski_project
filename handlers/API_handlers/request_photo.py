@@ -4,28 +4,24 @@ from typing import List, Optional, Dict
 from loader import rapid_api
 from logger_config import logger
 import requests
-# from . import connect_rapid_api
+from . import connect_rapid_api_post
 
 @logger.catch
 def request_photo(hotel_id: int) -> Optional[Dict]:
-    """Запрашивает с API фото и адрес, возвращает словарь ключ """
+    """Запрашивает с API фото и адрес, возвращает словарь ключи:
+    addr - адрес отеля
+    photo_url - список ссылок на фото отеля
+    """
     prop_id = str(hotel_id)
-    url = "https://hotels4.p.rapidapi.com/properties/v2/get-summary"
-
-    payload = {
+    req_params = {
         "currency": "RUB",
         "eapid": 1,
         "locale": "ru_RUS",
         "siteId": 300000001,
         "propertyId": prop_id
     }
-    headers = {
-        "content-type": "application/json",
-        "X-RapidAPI-Key": "06dd932f31msh0a52e2bdec9c858p132b0cjsnd04a260d0e20",
-        "X-RapidAPI-Host": "hotels4.p.rapidapi.com"
-    }
 
-    response = requests.request("POST", url, json=payload, headers=headers)
+    response = connect_rapid_api_post('https://hotels4.p.rapidapi.com/properties/v2/get-summary', rapid_api, req_params)
     # print(response)
 
     if response:
