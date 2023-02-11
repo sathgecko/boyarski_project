@@ -1,44 +1,52 @@
-import types
-import telebot
-from telebot import types
-from typing import Callable
+import time
+
+import timestamp as timestamp
+
+x = timestamp()
+print(x)
 
 
-bot = telebot.TeleBot('')
-"""
-Telegram-bot @UniqeHotelsBot (https://t.me/UniqeHotelsBot)
-реагирует на команду /hello-world, а также на текст «Привет» 
-"""
-
-@bot.message_handler(content_types=['text'])
-def start(message):
-    # bot.send_message(message.from_user.id, "Это бот по поиску отелей. Напиши команду")
-    if message.text == '/help':
-        bot.send_message(message.from_user.id, "Это бот по поиску отелей. В каком городе будем искать?")
-        bot.register_next_step_handler(message, get_city)
-    else:
-        bot.send_message(message.from_user.id, 'Я тебя не понимаю. Напиши /help')
-
-
-def get_city(message: str) -> Callable:  # получаем название города
-    city: str = message.text  # переменная содержит название города для поиска
-    keyboard = types.InlineKeyboardMarkup()  # наша клавиатура
-    key_lowprice = types.InlineKeyboardButton(text='Самые дешевые отели', callback_data='lowprice')  # кнопка «\lowprice»
-    keyboard.add(key_lowprice)  # добавляем кнопку в клавиатуру
-    key_highprice = types.InlineKeyboardButton(text='Самые дорогие отели', callback_data='highprice') # кнопка «\highprice»
-    keyboard.add(key_highprice)
-    city = f'Ищем гостиницу в городе {city}. Выбери параметры поиска:'
-    bot.send_message(message.from_user.id, text=city, reply_markup=keyboard)
-
-@bot.callback_query_handler(func=lambda call: True)
-def callback_worker(call):
-    if call.data == "lowprice": #call.data это callback_data, которую мы указали при объявлении кнопки
-        #код сохранения данных, или их обработки
-        bot.send_message(call.message.chat.id, 'Запомню : )')
-    elif call.data == "highprice":
-         bot.send_message(call.message.chat.id, 'Запомню : )')
-
-bot.polling(none_stop=True, interval=0)
+# import types
+# import telebot
+# from telebot import types
+# from typing import Callable
+#
+#
+# bot = telebot.TeleBot('')
+# """
+# Telegram-bot @UniqeHotelsBot (https://t.me/UniqeHotelsBot)
+# реагирует на команду /hello-world, а также на текст «Привет»
+# """
+#
+# @bot.message_handler(content_types=['text'])
+# def start(message):
+#     # bot.send_message(message.from_user.id, "Это бот по поиску отелей. Напиши команду")
+#     if message.text == '/help':
+#         bot.send_message(message.from_user.id, "Это бот по поиску отелей. В каком городе будем искать?")
+#         bot.register_next_step_handler(message, get_city)
+#     else:
+#         bot.send_message(message.from_user.id, 'Я тебя не понимаю. Напиши /help')
+#
+#
+# def get_city(message: str) -> Callable:  # получаем название города
+#     city: str = message.text  # переменная содержит название города для поиска
+#     keyboard = types.InlineKeyboardMarkup()  # наша клавиатура
+#     key_lowprice = types.InlineKeyboardButton(text='Самые дешевые отели', callback_data='lowprice')  # кнопка «\lowprice»
+#     keyboard.add(key_lowprice)  # добавляем кнопку в клавиатуру
+#     key_highprice = types.InlineKeyboardButton(text='Самые дорогие отели', callback_data='highprice') # кнопка «\highprice»
+#     keyboard.add(key_highprice)
+#     city = f'Ищем гостиницу в городе {city}. Выбери параметры поиска:'
+#     bot.send_message(message.from_user.id, text=city, reply_markup=keyboard)
+#
+# @bot.callback_query_handler(func=lambda call: True)
+# def callback_worker(call):
+#     if call.data == "lowprice": #call.data это callback_data, которую мы указали при объявлении кнопки
+#         #код сохранения данных, или их обработки
+#         bot.send_message(call.message.chat.id, 'Запомню : )')
+#     elif call.data == "highprice":
+#          bot.send_message(call.message.chat.id, 'Запомню : )')
+#
+# bot.polling(none_stop=True, interval=0)
 
 # import telebot
 # from telebot import types

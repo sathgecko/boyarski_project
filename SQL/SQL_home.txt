@@ -1,0 +1,187 @@
+# соединение таблиц
+SELECT
+	c.name kategoryName,
+    g.name productName
+FROM `good` g
+JOIN good_category c ON c.id = g.category_id
+
+# соединение таблиц по левой части поиск незаказанных товаров
+SELECT
+	g.`id`,
+    g.name,
+    o2g.order_id
+
+FROM good g
+LEFT JOIN order2good o2g ON o2g.good_id = g.id
+WHERE o2g.order_id is NULL
+
+# запрос соединение нескольких таблиц и вывод за период
+SELECT
+	c.name categoryName,
+    g.name productName,
+    o.creation_date orderDate,
+    u.name
+
+FROM `good` g
+JOIN `good_category` c ON c.id = g.category_id
+JOIN `order2good` o2g ON o2g.good_id = g.id
+JOIN `order` o ON o.id = o2g.order_id AND
+	o.creation_date BETWEEN '2017-08-01' AND '2017-08-30'
+JOIN `user` u ON u.id = o.user_id
+
+# выбор уникальных значений из полей
+SELECT DISTINCT
+	s1.name,
+    s2.name
+
+FROM `order_status_change` ch
+JOIN `order_status` s1 ON s1.id = ch.src_status_id
+JOIN `order_status` s2 ON s2.id = ch.dst_status_id
+WHERE 1
+
+# выбор количества товаров в категории с сортировкой по убыванию
+SELECT
+	c.name,
+	COUNT(*) `count`
+FROM `good` g
+JOIN `good_category` c ON c.id = g.category_id
+GROUP BY `category_id`
+ORDER BY `count` DESC
+
+# получение уникальных значений из 2 полей (уникальные пары значений)
+SELECT DISTINCT
+	`src_status_id`, `dst_status_id`
+
+FROM `order_status_change`
+
+# обновление данных в таблице
+UPDATE `good` SET
+	price = price - 50
+WHERE `count` > 0 AND `count` < 10
+
+# понижение цены при условии оператор IF
+SELECT `id`, `name`,
+	IF(
+        `count` > 20 OR `count` > 500,
+        `price` * 0.8,
+        `price`
+        ) `price`
+FROM `good`
+
+# оператор CASE вывод значений мало много нормально при выполнении условия
+SELECT `id`, `name`,
+	CASE
+    	WHEN count < 20 THEN 'Мало'
+        WHEN count > 500 THEN 'Много'
+        ELSE 'Нормально'
+    END count
+
+FROM `good` WHERE 1
+
+# Запрос. Получение информации о заказах с пометкой о просрочке
+SELECT `id`,`user_id`,`status_id`, `creation_date`,
+
+    CASE
+    	WHEN (`status_id` = 7 OR `status_id` = 8) AND `creation_date` < '2020-01-01'  THEN 'Старый'
+        WHEN (`status_id` != 7 OR `status_id` != 8) AND `creation_date` < '2020-01-01'  THEN 'Устаревший'
+        ELSE 'Новый'
+	END label
+FROM `order`
+ORDER BY `creation_date` DESC LIMIT 10
+
+# обрезка строки и добавление многоточия (конкатенация)
+SELECT `id`,
+	IF (
+        CHAR_LENGTH(`name` > 20),
+        CONCAT(SUBSTR(`name`, 1, 20), '...'),
+        `name`
+        )`name`
+
+FROM `good`
+
+# конкатенация при группировке
+SELECT
+	g.`id`,
+    GROUP_CONCAT(g.name) products
+
+FROM good g
+LEFT JOIN order2good o2g ON o2g.good_id = g.id
+WHERE o2g.order_id is NULL
+
+# конкатенация при группировке удаление пробелов после слов и добавление пробела после запятой
+SELECT
+	g.`id`,
+    GROUP_CONCAT(
+        TRIM(g.name) SEPARATOR ', '
+    ) products
+
+FROM good g
+LEFT JOIN order2good o2g ON o2g.good_id = g.id
+WHERE o2g.order_id is NULL
+
+# вывод месяца и количества продаж за месяц по полю count
+SELECT
+	DATE_FORMAT(
+        creation_date, '%m'
+        ) `month`,
+        COUNT(*) `итого продаж`
+FROM `order`
+GROUP BY `month`
+ORDER BY `month`
+
+NOW() # текущая дата и время
+CURDATE() # текущая дата
+DAYOFWEK() #день недели
+DAYOFYEAR() #
+DATEDIF(date2, date1) # разница между датами
+
+# вывод числа от даты TIMESTAMP
+SELECT UNIX_TIMESTAMP(`creation_date`) FROM `order` WHERE `id` = 248
+
+# прибавить день время дату к дате заказа
+SELECT FROM_UNIXTIME(1438979566), FROM_UNIXTIME(1438979566 + 87000)
+
+# получение количества уникальных имен в поле name
+SELECT COUNT(DISTINCT `name`)
+FROM `good`
+
+# вывод стоимости товаров в таблице дампе
+SELECT SUM(`count` * `price`)
+FROM `good`
+
+# расчет количества товаров, которые заканчиваются
+SELECT SUM(IF(`count` < 50, 1, 0))
+FROM `good`
+
+# получение максимальной и минимальной цены
+SELECT MIN(`price`) minprice, MAX(`price`) maxprice
+FROM `good`
+
+# получение средней цены
+SELECT AVG(`price`)
+FROM `good`
+
+#вывод категорий товаров, где осталость товаров менее 50 штук
+SELECT
+	c.name,
+	COUNT(*) `count`
+
+FROM `good` g
+JOIN `good_category` c ON c.id = g.category_id
+GROUP BY g.category_id
+HAVING count < 50
+
+# получение списка заказов цена которых больше 1000
+SELECT
+	o.id,
+	SUM(o2g.count * g.price) 'totalPrice'
+
+FROM `order` o
+JOIN order2good o2g ON o2g.order_id = o.id
+JOIN good g ON g.id = o2g.good_id
+GROUP BY o.id
+HAVING totalPrice > 1000
+
+#создание представлений
+CREATE VIEW expensive_goods AS
+SELECT * FROM `good` WHERE `price` > 600
